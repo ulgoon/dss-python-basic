@@ -14,5 +14,7 @@ limit = int(input("Type the number: "))
 
 #print(["fizzbuzz" if i%15==0 else "fizz" if i%3==0 else "buzz" if i%5==0 else i for i in range(1,limit+1)])
 
-for i in range (1, limit+1):
-    print("fizz"*(not i%3) + "buzz"*(not i%5) or i)
+#for i in range (1, limit+1):
+#    print("fizz"*(not i%3) + "buzz"*(not i%5) or i)
+
+print(["fizz"*(not i%3) + "buzz"*(not i%5) or i for i in range(1,limit+1)])
